@@ -80,4 +80,55 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView1"
         app:layout_constraintVertical_bias="0.983" />
 
+    <EditText
+        android:id="@+id/skala"
+        android:layout_width="220dp"
+        android:layout_height="61dp"
+        android:ems="10"
+        android:hint="Jak duży ma być obrazek?"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obrot"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <Button
+        android:id="@+id/scaleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skaluj"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintStart_toEndOf="@+id/skala"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRotationRight"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <Button
+        android:id="@+id/alphaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Kanał alfa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scaleButton"
+        app:layout_constraintVertical_bias="0.483" />
+
+    <EditText
+        android:id="@+id/alpha"
+        android:layout_width="225dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:hint="Jak przezroczysty ma być?"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/alphaButton"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skala"
+        app:layout_constraintVertical_bias="0.461" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

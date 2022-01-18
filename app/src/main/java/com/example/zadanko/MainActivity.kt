@@ -59,8 +59,25 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.buttonRotationLeft).setOnClickListener {
             var obrot = findViewById<EditText>(R.id.obrot).text.toString().toFloat()
-            findViewById<ImageView>(R.id.imageView1).rotation
+            findViewById<ImageView>(R.id.imageView1).rotation = findViewById<ImageView>(R.id.imageView1).rotation- obrot;
 
+        }
+
+        findViewById<Button>(R.id.buttonRotationRight).setOnClickListener {
+            var obrot = findViewById<EditText>(R.id.obrot).text.toString().toFloat()
+            findViewById<ImageView>(R.id.imageView1).rotation += obrot;
+        }
+
+        findViewById<Button>(R.id.scaleButton).setOnClickListener {
+            var skala = findViewById<EditText>(R.id.skala).text.toString().toFloat()
+            findViewById<ImageView>(R.id.imageView1).scaleX = skala;
+
+            findViewById<ImageView>(R.id.imageView1).scaleY = skala;
+        }
+
+        findViewById<Button>(R.id.alphaButton).setOnClickListener {
+            var sigma = findViewById<EditText>(R.id.alpha).text.toString().toInt()
+            findViewById<ImageView>(R.id.imageView1).imageAlpha = sigma;
         }
 
     }
