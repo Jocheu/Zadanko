@@ -79,6 +79,7 @@ class MainActivity : AppCompatActivity() {
             var sigma = findViewById<EditText>(R.id.alpha).text.toString().toInt()
             findViewById<ImageView>(R.id.imageView1).imageAlpha = sigma;
             //Test
+            //testv2
         }
 
     }
