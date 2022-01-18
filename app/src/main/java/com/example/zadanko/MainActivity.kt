@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.alphaButton).setOnClickListener {
             var sigma = findViewById<EditText>(R.id.alpha).text.toString().toInt()
             findViewById<ImageView>(R.id.imageView1).imageAlpha = sigma;
-            //
+            //Test
         }
 
     }
